@@ -130,3 +130,25 @@
   display: flex;
   justify-content: space-around;
 }
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 14px;
+}
+.footer__span {
+  text-decoration: none;
+  color: #ffe81f;
+  padding: 20px 20px 0 20px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer__link:hover {
+  color: yellowgreen;
+}
