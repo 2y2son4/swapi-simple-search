@@ -25,6 +25,7 @@
   color: #ffe81f;
   font-size: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .link {
   text-decoration: none;
@@ -38,6 +39,7 @@
 /* Search */
 .form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -45,17 +47,17 @@
 .input {
   color: #ffe81f;
   background-color: transparent;
-  border: 4px #ffe81f solid;
-  border-radius: 20px;
-  width: 250px;
-  height: 50px;
+  border: 8px #ffe81f solid;
+  border-radius: 10px;
+  width: 80%;
+  height: 70px;
   text-align: center;
   font-size: 28px;
-  margin: 0 25px;
+  margin: 25px;
   transition: all 0.8s ease;
 }
 .input:hover {
-  border: 4px #f83646 solid;
+  border: 8px #f83646 solid;
 }
 .input::placeholder {
   color: #ffe91f18;
@@ -68,11 +70,11 @@
   text-align: center;
   font-size: 24px;
   color: #ffe81f;
-  border-radius: 20px;
-  margin: 0 25px 25px 0;
+  border-radius: 10px;
   width: 250px;
   height: 100px;
   transition: all 0.8s ease;
+  margin-bottom: 25px;
 }
 
 .btn:hover {
@@ -87,11 +89,10 @@
   text-align: center;
   font-size: 24px;
   color: #ffe81f;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 150px;
   height: 50px;
   transition: all 0.8s ease;
-  margin-right: 25px;
 }
 
 .reset:hover {
@@ -112,7 +113,7 @@
   color: #ffe81f;
   background-color: #ffe91f18;
   border: 1px #ffe81f solid;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px;
   padding: 10px;
   min-width: 150px;
@@ -121,12 +122,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.8s ease;
+}
+.list:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 4px 4px whitesmoke;
 }
 .list-element {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0;
   list-style: none;
   text-transform: capitalize;
+}
+.name {
+  font-weight: bold;
+  border-bottom: 1px solid #ffe81f;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 /* Pagination */
@@ -143,8 +155,8 @@
 
 /* Footer */
 .footer {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -159,7 +171,14 @@
 .footer__link {
   text-decoration: none;
   color: whitesmoke;
+  transition: all 0.8s ease;
 }
 .footer__link:hover {
   color: yellowgreen;
+  transform: scale(3);
+}
+
+::selected {
+  background-color: yellowgreen;
+  color: #f83646;
 }

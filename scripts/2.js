@@ -36,7 +36,7 @@ function handleButton() {
           characterBirth = data.results[i].birth_year;
 
           characterDetails += '<ul class="list">';
-          characterDetails += `<li class="list-element">#${[i + 1]}: ${characterName}.</li>`;
+          characterDetails += `<li class="list-element name">#${[i + 1]}: ${characterName}.</li>`;
           characterDetails += `<li class="list-element">${characterGender}</li>`;
           characterDetails += `<li class="list-element">Hair: ${characterHair}</li>`;
           characterDetails += `<li class="list-element">Skin: ${characterSkin}</li>`;
