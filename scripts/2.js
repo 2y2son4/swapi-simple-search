@@ -29,7 +29,6 @@ function handleButton() {
       } else {
         for (let i = 0; i < data.results.length; i++) {
           characterName = data.results[i].name;
-          characterGender = data.results[i].gender;
           characterHair = data.results[i].hair_color;
           characterSkin = data.results[i].skin_color;
           characterEyes = data.results[i].eye_color;
@@ -37,7 +36,6 @@ function handleButton() {
 
           characterDetails += '<ul class="list">';
           characterDetails += `<li class="list-element name">#${[i + 1]}: ${characterName}.</li>`;
-          characterDetails += `<li class="list-element">${characterGender}</li>`;
           characterDetails += `<li class="list-element">Hair: ${characterHair}</li>`;
           characterDetails += `<li class="list-element">Skin: ${characterSkin}</li>`;
           characterDetails += `<li class="list-element">Eyes: ${characterEyes}</li>`;
