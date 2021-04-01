@@ -1,0 +1,132 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg') no-repeat
+    center / cover fixed;
+  /*
+  https://wallpapercave.com/wp/wp2902991.jpg 
+  https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg 
+  https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg
+  */
+}
+.title {
+  color: #ffe81f;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.link {
+  text-decoration: none;
+  color: #ffe81f;
+  transition: all 0.8s ease;
+}
+.link:hover {
+  color: #f83646;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input {
+  color: #ffe81f;
+  background-color: transparent;
+  border: 4px #ffe81f solid;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 28px;
+  margin: 0 25px;
+}
+.input:active {
+  border: 4px #f83646 solid;
+  border-radius: 20px;
+}
+.input::placeholder {
+  color: #ffe91f18;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: #000007 8px solid;
+  text-align: center;
+  font-size: 24px;
+  color: #ffe81f;
+  border-radius: 20px;
+  margin: 0 25px 25px 0;
+  width: 250px;
+  height: 100px;
+  transition: all 0.8s ease;
+}
+
+.btn:hover {
+  border: #ffe81f 8px solid;
+  color: #ffe81f;
+  background-color: #ffe91f18;
+}
+.reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: #000007 8px solid;
+  text-align: center;
+  font-size: 24px;
+  color: #ffe81f;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  transition: all 0.8s ease;
+  margin-right: 25px;
+}
+
+.reset:hover {
+  border: #f83646 8px solid;
+  color: #f83646;
+  background-color: #f836461f;
+}
+
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.list {
+  font-size: 18px;
+  color: #ffe81f;
+  background-color: #ffe91f18;
+  border: 1px #ffe81f solid;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  min-width: 150px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-element {
+  list-style: none;
+  text-transform: capitalize;
+}
+.pages {
+  text-decoration: none;
+  font-size: 32px;
+  color: #ffe81f;
+}
+.pages-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
