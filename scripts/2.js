@@ -15,6 +15,8 @@ let characterHair = '';
 let characterSkin = '';
 let characterEyes = '';
 let characterBirth = '';
+let characterHome = '';
+let characterPlanet = '';
 
 function handleButton() {
   let search = inputElement.value;
@@ -34,9 +36,16 @@ function handleButton() {
           characterSkin = data.results[i].skin_color;
           characterEyes = data.results[i].eye_color;
           characterBirth = data.results[i].birth_year;
+          characterHome = data.results[i].homeworld;
+          // characterPlanet = fetch(data.results[i].homeworld)
+          //   .then((response) => response.json())
+          //   .then((data2) => {
+          //     return data2.name;
+          //   });
 
           characterDetails += '<ul class="list">';
           characterDetails += `<li class="list-element">#${[i + 1]}: ${characterName}.</li>`;
+          // characterDetails += `<li class="list-element">${characterPlanet}</li>`;
           characterDetails += `<li class="list-element">${characterGender}</li>`;
           characterDetails += `<li class="list-element">Hair: ${characterHair}</li>`;
           characterDetails += `<li class="list-element">Skin: ${characterSkin}</li>`;
