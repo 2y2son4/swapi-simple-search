@@ -1,5 +1,6 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bangers', Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
   box-sizing: border-box;
   margin: 0;
 }
@@ -48,10 +49,10 @@
   text-align: center;
   font-size: 28px;
   margin: 0 25px;
+  transition: all 0.8s ease;
 }
-.input:active {
+.input:hover {
   border: 4px #f83646 solid;
-  border-radius: 20px;
 }
 .input::placeholder {
   color: #ffe91f18;
@@ -102,6 +103,7 @@
   justify-content: space-evenly;
 }
 .list {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #ffe81f;
   background-color: #ffe91f18;
@@ -117,6 +119,8 @@
   align-items: center;
 }
 .list-element {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
   list-style: none;
   text-transform: capitalize;
 }
