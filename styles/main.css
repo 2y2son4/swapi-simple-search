@@ -42,12 +42,13 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 980px;
 }
 
 .input {
   color: #ffe81f;
   background-color: transparent;
-  border: 8px #ffe81f solid;
+  border: #000007 8px solid;
   border-radius: 10px;
   width: 80%;
   height: 70px;
@@ -57,7 +58,8 @@
   transition: all 0.8s ease;
 }
 .input:hover {
-  border: 8px #f83646 solid;
+  border: 8px #ffe81f solid;
+  background-color: #ffe91f18;
 }
 .input::placeholder {
   color: #ffe91f18;
@@ -106,6 +108,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 980px;
 }
 .list {
   font-family: Arial, Helvetica, sans-serif;
@@ -177,8 +180,46 @@
   color: yellowgreen;
   transform: scale(3);
 }
-
-::selected {
-  background-color: yellowgreen;
+::selection {
+  background-color: #ffe81f;
   color: #f83646;
+}
+::-moz-selection {
+  background-color: #ffe81f;
+  color: #f83646;
+}
+
+.crawl {
+  /* Position the element so we can adjust the top property in the animation */
+  position: relative;
+  /* Defines the skew origin at the very center when we apply transforms on the animation */
+  transform-origin: 50% 100%;
+  /* Adds the crawl animation, which plays for one minute */
+  animation: crawl 5s linear;
+  overflow: hidden;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    /* The element starts below the screen */
+    top: 500px;
+    /* Rotate the text 20 degrees but keep it close to the viewer */
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+    top: -1100px;
+    /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
 }
